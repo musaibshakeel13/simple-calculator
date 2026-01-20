@@ -233,7 +233,7 @@
         </div>
         <div class="buttons">
             <button class="function" onclick="calc.clear()"><span>AC</span></button>
-            <button class="function" onclick="calc.toggleSign()"><span>+/-</span></button>
+            <button class="backspace" onclick="calc.backspace()"><span>⌫</span></button>
             <button class="function" onclick="calc.percent()"><span>%</span></button>
             <button class="operator" onclick="calc.setOperation('÷')"><span>÷</span></button>
             
@@ -252,7 +252,8 @@
             <button class="number" onclick="calc.appendNumber('3')"><span>3</span></button>
             <button class="operator" onclick="calc.setOperation('+')"><span>+</span></button>
             
-            <button class="number zero" onclick="calc.appendNumber('0')"><span>0</span></button>
+            <button class="function" onclick="calc.toggleSign()"><span>+/-</span></button>
+            <button class="number" onclick="calc.appendNumber('0')"><span>0</span></button>
             <button class="decimal" onclick="calc.appendNumber('.')"><span>.</span></button>
             <button class="equals" onclick="calc.calculate()"><span>=</span></button>
         </div>
